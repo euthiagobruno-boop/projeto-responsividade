@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.caixa1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.caixa-esquerda {
+    display: inline-block;
+    width: 60%;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+.caixa-direita {
+    display: inline-block;
+    background-color: rgba(93, 93, 124, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header {
+    display: flex;
+    /* Coloca os filhos lado a lado */
+    margin: 24px 0 0 57px;
+    /* Espaço entre os blocos de texto */
+    justify-content: space-between;
+    /* Distribui os blocos na largura */
+    align-items: flex-start;
+    /* Alinha os textos pelo topo */
+    font-size: 28px;
+    text-align: center;
+    width: 376px;
+    max-width: 100%;
+    height: 41px;
+    margin: 10px 70px;
+    cursor: pointer;
+}
+
+.menu:nth-child(1) {
+    opacity: 0.4;
+}
+
+.menu:hover {
+    opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 125px;
+    right: 130px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 88px;
+    color: #5D5D7D;
+}
+
+p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #5D5D7D;
+    width: 80%;
+}
+
+.botao {
+    height: 62px;
+    width: 269px;
+    max-width: 100%;
+    background-color: #9499EA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.botao:hover {
+    opacity: .8;
+}
+
+.botao:active {
+    opacity: .5;
+}
+
+/* Tablets e telas médias */
+@media screen and (max-width: 900px) {
+    .caixa1 {
+        min-height: auto;
+        height: auto;
+    }
+
+    .caixa-esquerda {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 32px 24px;
+        text-align: center;
+    }
+
+    .caixa-direita {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: 320px;
+        padding: 32px 20px;
+    }
+
+    header {
+        width: 100%;
+        max-width: 376px;
+        height: auto;
+        margin: 0 auto 28px auto;
+        font-size: 22px;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    img {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        max-height: 340px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 32px;
+        margin: 16px auto 24px auto;
+    }
+
+    .botao {
+        margin: 0 auto;
+    }
+}
+
+/* Celulares */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 240px;
+        height: 54px;
+        font-size: 20px;
+        line-height: 54px;
+    }
+
+    img {
+        max-height: 250px;
+    }
+}
